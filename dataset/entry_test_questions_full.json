@@ -1,0 +1,382 @@
+{
+  "created_at": "2025-09-26T08:13:04.464256",
+  "base_image_path": "C:/Users/PC/Desktop/chatbot/dataset/entry_test_image/",
+  "items": [
+    {
+      "id": "SUMIN_01",
+      "question": "조건 불만족을 말하는 a와 b의 조합을 고르시오.",
+      "options": [
+        "a=0, b=2",
+        "a=1, b=1",
+        "a=0, b=1",
+        "a=1, b=2"
+      ],
+      "image": "C:/Users/PC/Desktop/chatbot/dataset/entry_test_image/SUMIN_01.png",
+      "level": "중급",
+      "level_reason": "두 변수의 조합에 따른 조건 판단(복합 비교/논리 연산).",
+      "category": "조건문/논리",
+      "answer": 2
+    },
+    {
+      "id": "SUMIN_02",
+      "question": "다음 코드에 대한 설명으로 옳은 것을 고르시오.",
+      "options": [
+        "현재 코드의 결과와 a를 2로 정했을 때의 결과는 같다(이때 b,c는 코드와 같음)",
+        "현재 코드의 결과와 b를 4로 정했을 때의 결과는 다르다(이때 a,c는 코드와 같음)",
+        "조건 불만족 이라고 말한다.",
+        "조건 만족 이라고 말한다."
+      ],
+      "image": "C:/Users/PC/Desktop/chatbot/dataset/entry_test_image/SUMIN_02.png",
+      "level": "중급",
+      "level_reason": "코드 동작을 해석하여 결과를 비교·판단.",
+      "category": "조건문/논리",
+      "answer": 0
+    },
+    {
+      "id": "SUMIN_03",
+      "question": "다음 코드를 실행했을 때 '안녕'을 몇 번 말하는지 고르시오.",
+      "options": [
+        "5",
+        "4",
+        "3",
+        "2"
+      ],
+      "image": "C:/Users/PC/Desktop/chatbot/dataset/entry_test_image/SUMIN_03.png",
+      "level": "초급",
+      "level_reason": "단순 반복 횟수 계산.",
+      "category": "반복문",
+      "answer": 1
+    },
+    {
+      "id": "SUMIN_04",
+      "question": "a와 실행결과가 올바르게 짝지어진 것을 고르시오.",
+      "options": [
+        "a=10 → 강아지 짖는 소리 3초 재생",
+        "a=12 → 다시 시도하기",
+        "a=15 → 이동 방향으로 10만큼 움직이기",
+        "a=19 → 다시 시도하기"
+      ],
+      "image": "C:/Users/PC/Desktop/chatbot/dataset/entry_test_image/SUMIN_04.png",
+      "level": "중급",
+      "level_reason": "분기(조건문) 결과 매칭.",
+      "category": "조건문/분기",
+      "answer": 2
+    },
+    {
+      "id": "SUMIN_05",
+      "question": "마우스 포인터에 몇 번 닿아야 '성공 말하기'가 실행되는지 고르시오.",
+      "options": [
+        "0",
+        "21",
+        "10",
+        "5"
+      ],
+      "image": "C:/Users/PC/Desktop/chatbot/dataset/entry_test_image/SUMIN_05.png",
+      "level": "초급",
+      "level_reason": "카운트 조건 달성 시점 계산.",
+      "category": "반복문/이벤트",
+      "answer": 1
+    },
+    {
+      "id": "SUMIN_06",
+      "question": "다음 코드에 대한 설명으로 옳지 않은 것을 고르시오.",
+      "options": [
+        "score가 10일 때 yourscore가 9이면 '성공 말하기'가 실행된다",
+        "score가 yourscore보다 작으면 '실패 말하기'가 실행된다",
+        "score와 yourscore가 같으면 '실패 말하기'가 실행된다",
+        "score가 9일 때 yourscore가 9이면 '성공 말하기'가 실행된다"
+      ],
+      "image": "C:/Users/PC/Desktop/chatbot/dataset/entry_test_image/SUMIN_06.png",
+      "level": "중급",
+      "level_reason": "관계연산/분기 로직 판별.",
+      "category": "조건문/비교",
+      "answer": 2
+    },
+    {
+      "id": "SUMIN_07",
+      "question": "완료 말하기가 실행되었을 때 더해진 b의 숫자가 아닌 것을 고르시오.",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "image": "C:/Users/PC/Desktop/chatbot/dataset/entry_test_image/SUMIN_07.png",
+      "level": "중급",
+      "level_reason": "누적/반복 흐름에서 값 집합 판단.",
+      "category": "반복문/누적",
+      "answer": 3
+    },
+    {
+      "id": "SUMIN_08",
+      "question": "대답과 결과가 옳게 연결된 것을 고르시오.",
+      "options": [
+        "대답: 2 → 결과: 2",
+        "대답: 3 → 결과: 9",
+        "대답: 4 → 결과: 6",
+        "대답: 5 → 결과: 10"
+      ],
+      "image": "C:/Users/PC/Desktop/chatbot/dataset/entry_test_image/SUMIN_08.png",
+      "level": "초급",
+      "level_reason": "간단한 입출력 대응 규칙 확인.",
+      "category": "입출력/연산",
+      "answer": 1
+    },
+    {
+      "id": "SUMIN_09",
+      "question": "입력된 숫자와 결과가 옳게 연결된 것을 고르시오.",
+      "options": [
+        "대답: 2 → 결과: 2",
+        "대답: 3 → 결과: 9",
+        "대답: 4 → 결과: 6",
+        "대답: 5 → 결과: 10"
+      ],
+      "image": "C:/Users/PC/Desktop/chatbot/dataset/entry_test_image/SUMIN_09.png",
+      "level": "초급",
+      "level_reason": "간단한 연산/규칙 매칭.",
+      "category": "입출력/연산",
+      "answer": 1
+    },
+    {
+      "id": "SUMIN_10",
+      "question": "어떤 결과가 출력되는지 고르시오.",
+      "options": [
+        "22",
+        "20",
+        "12",
+        "2"
+      ],
+      "image": "C:/Users/PC/Desktop/chatbot/dataset/entry_test_image/SUMIN_10.png",
+      "level": "중급",
+      "level_reason": "여러 연산/분기 조합 결과 해석.",
+      "category": "종합(연산+조건)",
+      "answer": 0
+    },
+    {
+      "id": "SUMIN_11",
+      "question": "코드 수행 후 출력된 숫자들의 모음을 고르시오.",
+      "options": [
+        "1, 2, 3, 4, 5",
+        "2, 4",
+        "1, 3, 5",
+        "3, 4"
+      ],
+      "image": "C:/Users/PC/Desktop/chatbot/dataset/entry_test_image/SUMIN_11.png",
+      "level": "중급",
+      "level_reason": "반복/조건에 따른 출력 집합 추정.",
+      "category": "반복문/조건",
+      "answer": 1
+    },
+    {
+      "id": "SUMIN_12",
+      "question": "다음 코드에 대한 설명으로 옳지 않은 것을 고르시오.",
+      "options": [
+        "a가 3이면 '실패 말하기'가 실행된다",
+        "a가 1이면 '성공 말하기'가 실행된다",
+        "a가 4이면 '실패 말하기'가 실행된다",
+        "a가 0이면 '성공 말하기'가 실행된다"
+      ],
+      "image": "C:/Users/PC/Desktop/chatbot/dataset/entry_test_image/SUMIN_12.png",
+      "level": "중급",
+      "level_reason": "조건 분기 정확성 판별.",
+      "category": "조건문/비교",
+      "answer": 0
+    },
+    {
+      "id": "SUMIN_13",
+      "question": "아래 코드의 실행결과로 가장 적절한 것을 고르시오.",
+      "options": [
+        "이동 방향으로 5만큼 움직인다",
+        "이동 방향으로 10만큼 움직인다",
+        "이동 방향으로 50만큼 움직인다",
+        "이동 방향으로 100만큼 움직인다"
+      ],
+      "image": "C:/Users/PC/Desktop/chatbot/dataset/entry_test_image/SUMIN_13.png",
+      "level": "초급",
+      "level_reason": "단순 이동 크기 판단.",
+      "category": "이동/좌표",
+      "answer": 1
+    },
+    {
+      "id": "SUMIN_14",
+      "question": "아래 코드의 실행결과로 가장 적절한 것을 고르시오.",
+      "options": [
+        "움직이지 않는다",
+        "이동 방향으로 50만큼 움직이고 멈춘다",
+        "이동 방향으로 5만큼 움직이고 멈춘다",
+        "이동 방향으로 계속 움직인다"
+      ],
+      "image": "C:/Users/PC/Desktop/chatbot/dataset/entry_test_image/SUMIN_14.png",
+      "level": "중급",
+      "level_reason": "반복/중지 조건 유무 판단.",
+      "category": "반복문/제어",
+      "answer": 1
+    },
+    {
+      "id": "SUMIN_15",
+      "question": "과일 리스트에 [사과, 자두, 바나나, 포도, 수박]이 있을 때 다음 블록코드의 실행 결과를 고르시오.",
+      "options": [
+        "바나나, 맛있다, 다음",
+        "맛있다, 맛있다, 바나나, 맛있다, 맛있다",
+        "다음, 다음, 바나나, 다음, 다음",
+        "다음, 다음, 맛있다, 다음, 다음",
+        "다음, 다음, 맛있다, 다음, 다음"
+      ],
+      "image": "C:/Users/PC/Desktop/chatbot/dataset/entry_test_image/SUMIN_15.png",
+      "level": "고급",
+      "level_reason": "리스트 순회/조건/출력 패턴 복합.",
+      "category": "리스트/배열",
+      "answer": 1
+    },
+    {
+      "id": "UJE_01",
+      "question": "다음 반복문의 실행결과는?",
+      "options": [
+        "45",
+        "50",
+        "90",
+        "100"
+      ],
+      "image": "C:/Users/PC/Desktop/chatbot/dataset/entry_test_image/UJE_01.png",
+      "level": "초급",
+      "level_reason": "단순 누적 합 또는 반복 횟수 계산.",
+      "category": "반복문/누적",
+      "answer": 0
+    },
+    {
+      "id": "UJE_02",
+      "question": "해당 코드를 실행했을 때 엔트리봇은 얼마나 움직였을까요?",
+      "options": [
+        "오른쪽으로 100",
+        "오른쪽으로 10",
+        "제자리",
+        "왼쪽으로 10"
+      ],
+      "image": "C:/Users/PC/Desktop/chatbot/dataset/entry_test_image/UJE_02.png",
+      "level": "초급",
+      "level_reason": "이동 명령 해석.",
+      "category": "이동/좌표",
+      "answer": 0
+    },
+    {
+      "id": "UJE_03",
+      "question": "해당 코드를 실행했을 때 엔트리봇은 몇 바퀴 회전하였을까요?",
+      "options": [
+        "10바퀴",
+        "5바퀴",
+        "4바퀴",
+        "1바퀴"
+      ],
+      "image": "C:/Users/PC/Desktop/chatbot/dataset/entry_test_image/UJE_03.png",
+      "level": "초급",
+      "level_reason": "회전 각도→바퀴 수 계산.",
+      "category": "이동/회전",
+      "answer": 0
+    },
+    {
+      "id": "UJE_04",
+      "question": "해당 코드를 실행했을 때 엔트리봇은 몇 바퀴 회전하였고 정답은 얼마일까요?",
+      "options": [
+        "4바퀴, 10",
+        "5바퀴, 20",
+        "10바퀴, 10",
+        "10바퀴, 20"
+      ],
+      "image": "C:/Users/PC/Desktop/chatbot/dataset/entry_test_image/UJE_04.png",
+      "level": "중급",
+      "level_reason": "두 결과(회전수/정답) 동시 추론.",
+      "category": "복합(회전+연산)",
+      "answer": 0
+    },
+    {
+      "id": "UJE_05",
+      "question": "해당 코드를 실행했을 때 엔트리봇의 크기는 얼마일까요?",
+      "options": [
+        "40",
+        "100",
+        "10",
+        "0"
+      ],
+      "image": "C:/Users/PC/Desktop/chatbot/dataset/entry_test_image/UJE_05.png",
+      "level": "초급",
+      "level_reason": "크기/스케일 변경 해석.",
+      "category": "속성/크기",
+      "answer": 0
+    },
+    {
+      "id": "UJE_06",
+      "question": "해당 코드를 실행했을 때 엔트리봇은 우리에게 '안녕'이라고 몇 번 말했을까요?",
+      "options": [
+        "10번",
+        "20번",
+        "50번",
+        "100번"
+      ],
+      "image": "C:/Users/PC/Desktop/chatbot/dataset/entry_test_image/UJE_06.png",
+      "level": "초급",
+      "level_reason": "반복 횟수 산출.",
+      "category": "반복문/출력",
+      "answer": 1
+    },
+    {
+      "id": "UJE_07",
+      "question": "해당 코드를 실행했을 때 엔트리봇은 얼마나 이동했을까요?",
+      "options": [
+        "오른쪽으로 100",
+        "왼쪽으로 100",
+        "오른쪽으로 50",
+        "왼쪽으로 50"
+      ],
+      "image": "C:/Users/PC/Desktop/chatbot/dataset/entry_test_image/UJE_07.png",
+      "level": "초급",
+      "level_reason": "합성 이동 결과 판단.",
+      "category": "이동/좌표",
+      "answer": 2
+    },
+    {
+      "id": "UJE_08",
+      "question": "해당 코드를 실행했을 때 엔트리봇은 어떻게 될까요?",
+      "options": [
+        "키가 커져요!",
+        "키가 작아져요!",
+        "살이 쪄요!",
+        "살이 빠져요!"
+      ],
+      "image": "C:/Users/PC/Desktop/chatbot/dataset/entry_test_image/UJE_08.png",
+      "level": "초급",
+      "level_reason": "속성 변경(크기 증감) 해석.",
+      "category": "속성/크기",
+      "answer": 0
+    },
+    {
+      "id": "UJE_09",
+      "question": "해당 코드를 실행했을 때 강아지는 몇 초 동안 짖을까요?",
+      "options": [
+        "10초",
+        "5초",
+        "3초",
+        "1초"
+      ],
+      "image": "C:/Users/PC/Desktop/chatbot/dataset/entry_test_image/UJE_09.png",
+      "level": "초급",
+      "level_reason": "시간 매개변수 해석.",
+      "category": "소리/시간",
+      "answer": 2
+    },
+    {
+      "id": "UJE_10",
+      "question": "해당 코드를 실행했을 때 엔트리봇은 몇 개가 될까요?",
+      "options": [
+        "5개",
+        "10개",
+        "3개",
+        "4개"
+      ],
+      "image": "C:/Users/PC/Desktop/chatbot/dataset/entry_test_image/UJE_10.png",
+      "level": "중급",
+      "level_reason": "복제/반복 로직 추정.",
+      "category": "복제/객체",
+      "answer": 1
+    }
+  ]
+}

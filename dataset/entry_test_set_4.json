@@ -1,0 +1,73 @@
+[
+  {
+    "id": "SUMIN_04",
+    "level": "중급",
+    "category": "조건문/분기",
+    "question": "a와 실행결과가 올바르게 짝지어진 것을 고르시오.",
+    "options": [
+      "a=10 → 강아지 짖는 소리 3초 재생",
+      "a=12 → 다시 시도하기",
+      "a=15 → 이동 방향으로 10만큼 움직이기",
+      "a=19 → 다시 시도하기"
+    ],
+    "answer": 2,
+    "image": "C:/Users/PC/Desktop/chatbot/dataset/entry_test_image/SUMIN_04.png"
+  },
+  {
+    "id": "UJE_07",
+    "level": "초급",
+    "category": "이동/좌표",
+    "question": "해당 코드를 실행했을 때 엔트리봇은 얼마나 이동했을까요?",
+    "options": [
+      "오른쪽으로 100",
+      "왼쪽으로 100",
+      "오른쪽으로 50",
+      "왼쪽으로 50"
+    ],
+    "answer": 2,
+    "image": "C:/Users/PC/Desktop/chatbot/dataset/entry_test_image/UJE_07.png"
+  },
+  {
+    "id": "SUMIN_15",
+    "level": "고급",
+    "category": "리스트/배열",
+    "question": "과일 리스트에 [사과, 자두, 바나나, 포도, 수박]이 있을 때 다음 블록코드의 실행 결과를 고르시오.",
+    "options": [
+      "바나나, 맛있다, 다음",
+      "맛있다, 맛있다, 바나나, 맛있다, 맛있다",
+      "다음, 다음, 바나나, 다음, 다음",
+      "다음, 다음, 맛있다, 다음, 다음",
+      "다음, 다음, 맛있다, 다음, 다음"
+    ],
+    "answer": 1,
+    "image": "C:/Users/PC/Desktop/chatbot/dataset/entry_test_image/SUMIN_15.png"
+  },
+  {
+    "id": "UJE_10",
+    "level": "중급",
+    "category": "복제/객체",
+    "question": "해당 코드를 실행했을 때 엔트리봇은 몇 개가 될까요?",
+    "options": [
+      "5개",
+      "10개",
+      "3개",
+      "4개"
+    ],
+    "answer": 1,
+    "image": "C:/Users/PC/Desktop/chatbot/dataset/entry_test_image/UJE_10.png"
+  },
+  {
+    "id": "UJE_09",
+    "level": "초급",
+    "category": "소리/시간",
+    "question": "해당 코드를 실행했을 때 강아지는 몇 초 동안 짖을까요?",
+    "options": [
+      "10초",
+      "5초",
+      "3초",
+      "1초"
+    ],
+    "answer": 2,
+    "image": "C:/Users/PC/Desktop/chatbot/dataset/entry_test_image/UJE_09.png"
+  }
+]

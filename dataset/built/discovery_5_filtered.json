@@ -1,0 +1,26 @@
+[
+  {
+    "id": "{'$oid': '65e9841eea553c0035981f02'}",
+    "title": "루프스테이션 콘서트",
+    "category": "arts",
+    "difficulty": 1,
+    "url": "https://playentry.org/discovery/65e9841eea553c0035981f02",
+    "search_text": "루프스테이션 콘서트 4초 반복이 멋진 음악이 되는 순간! 다양한 소리를 쌓아 나만의 루프스테이션을 만들어요."
+  },
+  {
+    "id": "{'$oid': '65f16eedea553c00359909b1'}",
+    "title": "내일은 배구왕",
+    "category": "game",
+    "difficulty": 2,
+    "url": "https://playentry.org/discovery/65f16eedea553c00359909b1",
+    "search_text": "내일은 배구왕 강렬한 스파이크! 박진감 넘치는 배구 게임 공을 토스하고 스파이크를 날려보는 재미! 배구 게임을 만들어 보자."
+  },
+  {
+    "id": "{'$oid': '6628fdc890f0334f77398720'}",
+    "title": "AI와 과일 따기",
+    "category": "knowledge",
+    "difficulty": 3,
+    "url": "https://playentry.org/discovery/6628fdc890f0334f77398720",
+    "search_text": "AI와 과일 따기 손 안 대고 과일 따는 스마트한 방법 단순 선형회귀 AI 모델을 만들어 반복적인 과일 따기 작업을 자동화해요."
+  }
+]

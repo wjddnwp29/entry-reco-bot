@@ -1,0 +1,61 @@
+<!-- templates/main.html -->
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>엔트리 추천 챗봇</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-slate-50">
+  <header class="bg-white border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="text-lg font-semibold">🎯 엔트리 추천 챗봇</div>
+      <nav class="flex gap-4">
+        <a href="/login" class="text-sm text-slate-600 hover:text-slate-900">로그인</a>
+        <a href="/signup" class="text-sm text-slate-600 hover:text-slate-900">회원가입</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-6 py-14">
+    <section class="bg-white border border-slate-200 rounded-2xl p-12 shadow-md">
+      <h1 class="text-3xl font-bold">엔트리 추천 챗봇</h1>
+      <p class="text-slate-600 mt-4 text-lg">
+        엔트리 프로젝트를 만들고 싶은 아이들을 위한 맞춤형 추천 시스템입니다.
+      </p>
+      <p class="text-slate-600 text-lg">
+        질문을 입력하면 관련된 콘텐츠를 추천해줘요!
+      </p>
+
+      <div class="mt-10 flex flex-wrap gap-4">
+        <!-- 시작 버튼 -->
+        <a href="/login"
+           class="inline-flex items-center px-7 py-4 rounded-xl bg-indigo-600 text-white hover:bg-indigo-700 text-lg font-semibold">
+          시작하러 가기
+        </a>
+        <!-- 설명서 버튼 -->
+        <a href="/static/manual.pdf" target="_blank"
+           class="inline-flex items-center px-7 py-4 rounded-xl bg-slate-900 text-white hover:bg-black text-lg font-semibold">
+          설명서 보기
+        </a>
+      </div>
+    </section>
+
+    <section class="mt-14 grid sm:grid-cols-3 gap-6">
+      <div class="bg-white border border-slate-200 rounded-2xl p-8">
+        <div class="text-xl font-semibold">🧪 Entry Test</div>
+        <p class="text-slate-600 text-base mt-2">5문항 랜덤 세트로 수준을 진단해요.</p>
+      </div>
+      <div class="bg-white border border-slate-200 rounded-2xl p-8">
+        <div class="text-xl font-semibold">🔎 유사도 추천</div>
+        <p class="text-slate-600 text-base mt-2">질문과 비슷한 콘텐츠를 찾아줘요.</p>
+      </div>
+      <div class="bg-white border border-slate-200 rounded-2xl p-8">
+        <div class="text-xl font-semibold">🧠 MAML 보정</div>
+        <p class="text-slate-600 text-base mt-2">사용 로그로 추천을 미세하게 보정해요.</p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Entry Test | 엔트리 추천 챗봇</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-slate-50">
+  <header class="bg-white border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="/" class="text-lg font-semibold">🎯 엔트리 추천 챗봇</a>
+      <nav class="text-sm">
+        <a href="/login" class="text-slate-600 hover:text-slate-900">로그인</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-6 py-10">
+    {% if not finished %}
+      <section class="bg-white border border-slate-200 rounded-2xl p-8 shadow-sm">
+        <h1 class="text-2xl font-bold">🧪 Entry Test</h1>
+        <p class="text-slate-600 mt-2">아래 5문항을 풀어주세요. (랜덤 세트: {{ set_name }})</p>
+
+        <form method="post" action="/entry_test" class="mt-6 space-y-8">
+          {% for q in items %}
+          <div class="bg-slate-50 border border-slate-200 rounded-xl p-5">
+            <div class="flex items-start gap-4">
+              <div class="flex-1">
+                <h3 class="font-semibold">Q{{ loop.index }}. {{ q.question }}</h3>
+
+                {% set qidx = loop.index0 %}
+                {% set opts = q.options %}
+
+                <div class="mt-3 grid sm:grid-cols-2 gap-2">
+                  {% for opt in opts %}
+                  <label class="flex items-center gap-2 bg-white border border-slate-200 rounded-lg px-3 py-2">
+                    <input type="radio" name="q{{ qidx }}" value="{{ 'ABCD'[loop.index0] }}" required>
+                    <span class="text-sm">{{ 'ABCD'[loop.index0] }}. {{ opt }}</span>
+                  </label>
+                  {% endfor %}
+                </div>
+              </div>
+
+              {% set img_src = q.image or q.image_path %}
+              {% if img_src %}
+                {% set fname = img_src.split('/')[-1].split('\\')[-1] %}
+                <img src="/entry_img/{{ fname }}" alt="문항 이미지"
+                     class="w-56 h-auto rounded-lg border border-slate-200 hidden sm:block">
+              {% endif %}
+            </div>
+          </div>
+          {% endfor %}
+
+          <div class="pt-2">
+            <button class="px-5 py-3 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white font-semibold">
+              제출하기
+            </button>
+          </div>
+        </form>
+      </section>
+
+    {% else %}
+      <!-- 채점 결과 -->
+      <section class="bg-white border border-slate-200 rounded-2xl p-8 shadow-sm">
+        <h1 class="text-2xl font-bold">채점 결과</h1>
+        <p class="text-slate-700 mt-2">
+          총 {{ items|length }}문항 중 <b>{{ correct }}</b>개 정답 · 점수 <b>{{ score }}</b>점
+        </p>
+        <div class="mt-4 inline-flex items-center gap-2 px-4 py-2 rounded-xl
+                    {% if level=='Advanced' %} bg-emerald-50 text-emerald-700 border border-emerald-200
+                    {% elif level=='Intermediate' %} bg-amber-50 text-amber-700 border border-amber-200
+                    {% else %} bg-rose-50 text-rose-700 border border-rose-200 {% endif %}">
+          🎯 진단 결과: <b>{{ level }}</b>
+        </div>
+
+        {% if answers %}
+        <div class="mt-8 space-y-6">
+          {% for q in items %}
+            {% set gt = q.answer %}
+            {% set gt_s = (gt|string) if gt is not none else '' %}
+            {% if gt_s in 'ABCD' %}
+              {% set gt_letter = gt_s %}
+            {% else %}
+              {% set idx = gt if gt is not none else -1 %}
+              {% if idx is string %}
+                {% set idx = idx|int %}
+              {% endif %}
+              {% if 0 <= idx and idx < 4 %}
+                {% set gt_letter = 'ABCD'[idx] %}
+              {% else %}
+                {% set gt_letter = '' %}
+              {% endif %}
+            {% endif %}
+
+            {% set ua = answers[loop.index0] if answers else '' %}
+            <div class="bg-slate-50 border border-slate-200 rounded-xl p-5">
+              <div class="flex items-start gap-4">
+                <div class="flex-1">
+                  <div class="font-semibold">Q{{ loop.index }}. {{ q.question }}</div>
+                  <div class="mt-2 text-sm">
+                    <span class="mr-3">내 답: <b>{{ ua }}</b></span>
+                    <span>정답: <b>{{ gt_letter }}</b></span>
+                    {% if ua == gt_letter %}
+                      <span class="ml-2 text-emerald-600">✅ 정답</span>
+                    {% else %}
+                      <span class="ml-2 text-rose-600">❌ 오답</span>
+                    {% endif %}
+                  </div>
+                </div>
+                {% set img_src = q.image or q.image_path %}
+                {% if img_src %}
+                  {% set fname = img_src.split('/')[-1].split('\\')[-1] %}
+                  <img src="/entry_img/{{ fname }}" alt="문항 이미지"
+                       class="w-48 h-auto rounded-lg border border-slate-200 hidden sm:block">
+                {% endif %}
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+        {% endif %}
+
+        <div class="mt-8 flex gap-3">
+          <a href="/chat" class="px-5 py-3 rounded-xl bg-slate-900 text-white hover:bg-black">추천 받으러 가기</a>
+          <a href="/entry_test" class="px-5 py-3 rounded-xl bg-slate-200 text-slate-800 hover:bg-slate-300">다시 풀기</a>
+        </div>
+      </section>
+    {% endif %}
+  </main>
+</body>
+</html>

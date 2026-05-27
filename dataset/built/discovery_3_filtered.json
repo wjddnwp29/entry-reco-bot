@@ -1,0 +1,250 @@
+[
+  {
+    "id": "ObjectId(61d2a6ea94a125003f94e23c)",
+    "title": "클릭! 나무 키우기",
+    "category": "game",
+    "difficulty": 1,
+    "url": "https://playentry.org/discovery/61d2a6ea94a125003f94e23c",
+    "search_text": "클릭! 나무 키우기 클릭하다 보니 어느새 나무가 다 자랐다 클릭으로 즐기는 무한의 재미! 클리커 게임을 만들어 보자."
+  },
+  {
+    "id": "ObjectId(61d68107ec9979003fb71fb8)",
+    "title": "와썹, 콧수염 셀카!",
+    "category": "living",
+    "difficulty": 1,
+    "url": "https://playentry.org/discovery/61d68107ec9979003fb71fb8",
+    "search_text": "와썹, 콧수염 셀카! 인공지능이 만들어 주는 멋진 콧수염 얼굴 인식을 이용해 AR 카메라를 만들어 봐요!"
+  },
+  {
+    "id": "ObjectId(61d68ad5ec9979003fb71fb9)",
+    "title": "종이접기의 세계",
+    "category": "knowledge",
+    "difficulty": 2,
+    "url": "https://playentry.org/discovery/61d68ad5ec9979003fb71fb9",
+    "search_text": "종이접기의 세계 이런 것도 접을 수 있다고? 나만의 종이접기 방법을 공유하는 작품을 만들어요."
+  },
+  {
+    "id": "ObjectId(61dd3877ec9979003fb7210d)",
+    "title": "우리 동네 한 바퀴",
+    "category": "knowledge",
+    "difficulty": 1,
+    "url": "https://playentry.org/discovery/61dd3877ec9979003fb7210d",
+    "search_text": "우리 동네 한 바퀴 나만 알고 싶은 우리 동네 정보 대방출 우리 동네의 명소와 맛집을 소개하는 작품을 만들어요."
+  },
+  {
+    "id": "ObjectId(61df7d6bec9979003fb721ab)",
+    "title": "추상화 런치패드",
+    "category": "arts",
+    "difficulty": 1,
+    "url": "https://playentry.org/discovery/61df7d6bec9979003fb721ab",
+    "search_text": "추상화 런치패드 점, 선, 면, 색으로 만드는 소리 추상화를 그리고 다양한 소리를 연주하는 예술 작품을 만들어요."
+  },
+  {
+    "id": "ObjectId(61df810aec9979003fb721ac)",
+    "title": "파리 패션 위크",
+    "category": "arts",
+    "difficulty": 1,
+    "url": "https://playentry.org/discovery/61df810aec9979003fb721ac",
+    "search_text": "파리 패션 위크 세계의 패션을 이끌 완판 컬렉션 창의력과 열정을 담은 나만의 옷을 디자인해 봐요."
+  },
+  {
+    "id": "ObjectId(61df946dec9979003fb721af)",
+    "title": "캐릭터에 감정 불어넣기",
+    "category": "storytelling",
+    "difficulty": 1,
+    "url": "https://playentry.org/discovery/61df946dec9979003fb721af",
+    "search_text": "캐릭터에 감정 불어넣기 스토리에 생동감을 더하는 비법 캐릭터로 다양한 감정들을 표현하는 작품을 만들어요."
+  },
+  {
+    "id": "ObjectId(625617b2ae32f7002f12bbfc)",
+    "title": "꼭꼭 숨겨봐!",
+    "category": "game",
+    "difficulty": 1,
+    "url": "https://playentry.org/discovery/625617b2ae32f7002f12bbfc",
+    "search_text": "꼭꼭 숨겨봐! 숨은그림찾기 만큼 재미있는 그림 숨기기 그림 속에 꼭꼭 숨어라! 재미있는 숨은그림찾기 게임을 만들어요."
+  },
+  {
+    "id": "ObjectId(62561cceae32f7002f12bbff)",
+    "title": "말 잘 듣는 엔트리봇",
+    "category": "game",
+    "difficulty": 2,
+    "url": "https://playentry.org/discovery/62561cceae32f7002f12bbff",
+    "search_text": "말 잘 듣는 엔트리봇 내 말을 알아듣는 인공지능 로봇 내 목소리를 인식하고 행동하는 인공지능 로봇을 만들어요."
+  },
+  {
+    "id": "ObjectId(625621ceae32f7002f12bc0b)",
+    "title": "시간을 지배하는 자",
+    "category": "living",
+    "difficulty": 1,
+    "url": "https://playentry.org/discovery/625621ceae32f7002f12bc0b",
+    "search_text": "시간을 지배하는 자 나만 몰랐던 타이머에 숨겨진 힘 시간을 잘 관리할 수 있게 해주는 타이머를 만들어요."
+  },
+  {
+    "id": "ObjectId(62562551ae32f7002f12bc0e)",
+    "title": "알려줘! 내 인생의 해답",
+    "category": "living",
+    "difficulty": 2,
+    "url": "https://playentry.org/discovery/62562551ae32f7002f12bc0e",
+    "search_text": "알려줘! 내 인생의 해답 무엇이든 대답해 줄게 모든 고민에 해답을 제시해 주는 프로그램을 만들어요."
+  },
+  {
+    "id": "ObjectId(6256280eae32f7002f12bc10)",
+    "title": "속담 체인지",
+    "category": "storytelling",
+    "difficulty": 1,
+    "url": "https://playentry.org/discovery/6256280eae32f7002f12bc10",
+    "search_text": "속담 체인지 알려진 이야기로 만드는 반전 스토리 속담을 살짝 바꿔 재미있는 이야기의 작품을 만들어요."
+  },
+  {
+    "id": "ObjectId(62562b6eae32f7002f12bc13)",
+    "title": "비 오는 거리를 걸었어",
+    "category": "storytelling",
+    "difficulty": 2,
+    "url": "https://playentry.org/discovery/62562b6eae32f7002f12bc13",
+    "search_text": "비 오는 거리를 걸었어 슬프면 비가 오고, 기쁘면 해가 뜨고 날씨를 이야기로 표현하는 작품을 만들어요."
+  },
+  {
+    "id": "ObjectId(625630e7ae32f7002f12bc15)",
+    "title": "패턴의 미학",
+    "category": "arts",
+    "difficulty": 2,
+    "url": "https://playentry.org/discovery/625630e7ae32f7002f12bc15",
+    "search_text": "패턴의 미학 나만의 패턴으로 만드는 커스텀 신발 개성이 담긴 패턴으로 여러 가지 제품을 디자인해요."
+  },
+  {
+    "id": "ObjectId(6256342dae32f7002f12bc18)",
+    "title": "여행의 법칙",
+    "category": "knowledge",
+    "difficulty": 1,
+    "url": "https://playentry.org/discovery/6256342dae32f7002f12bc18",
+    "search_text": "여행의 법칙 엔트리로 세계여행 버스를 타고 세계의 랜드마크들을 구경해요."
+  },
+  {
+    "id": "ObjectId(6256365aae32f7002f12bc21)",
+    "title": "여행의 법칙",
+    "category": "knowledge",
+    "difficulty": 1,
+    "url": "https://playentry.org/discovery/6256365aae32f7002f12bc21",
+    "search_text": "여행의 법칙 엔트리로 떠나는 세계여행 버스를 타고 세계의 랜드마크를 구경하는 작품을 만들어요."
+  },
+  {
+    "id": "ObjectId(627b164fcce38800300816a8)",
+    "title": "이리 퐁! 저리 퐁!",
+    "category": "game",
+    "difficulty": 2,
+    "url": "https://playentry.org/discovery/627b164fcce38800300816a8",
+    "search_text": "이리 퐁! 저리 퐁! 최초의 아케이드 비디오 게임 'PONG' PONG 게임을 나만의 스타일로 만들어 보자."
+  },
+  {
+    "id": "ObjectId(627b2137cce38800300816ae)",
+    "title": "인공지능 앵무새 번역기",
+    "category": "living",
+    "difficulty": 2,
+    "url": "https://playentry.org/discovery/627b2137cce38800300816ae",
+    "search_text": "인공지능 앵무새 번역기 파파고로 만드는 똑똑한 번역기 인공지능 활용 블록을 이용해 번역기를 만들어요."
+  },
+  {
+    "id": "ObjectId(627b2557cce38800300816b2)",
+    "title": "나의 첫 번째 스토리",
+    "category": "storytelling",
+    "difficulty": 2,
+    "url": "https://playentry.org/discovery/627b2557cce38800300816b2",
+    "search_text": "나의 첫 번째 스토리 이야기를 완성하는 고대의 비법, 3막 구조 3막 구조를 이용하여 흥미진진한 나만의 스토리를 만들어봐요."
+  },
+  {
+    "id": "ObjectId(627b29decce38800300816be)",
+    "title": "별 보러 갈래?",
+    "category": "arts",
+    "difficulty": 2,
+    "url": "https://playentry.org/discovery/627b29decce38800300816be",
+    "search_text": "별 보러 갈래? 인공지능과 함께하는 신기한 작품 속으로 인공지능과 함께하는 미래의 인터랙티브 아트를 만들어봐요."
+  },
+  {
+    "id": "ObjectId(627b4506cce38800300816c5)",
+    "title": "달에 토끼가 없는 이유",
+    "category": "knowledge",
+    "difficulty": 2,
+    "url": "https://playentry.org/discovery/627b4506cce38800300816c5",
+    "search_text": "달에 토끼가 없는 이유 달에서 내 몸무게는 얼마일까? 달과 지구의 차이점에 대해 조사하고 실험해봐요."
+  },
+  {
+    "id": "ObjectId(6281c69246c0710240fb6c55)",
+    "title": "시원하게 벽돌을 깨자",
+    "category": "game",
+    "difficulty": 3,
+    "url": "https://playentry.org/discovery/6281c69246c0710240fb6c55",
+    "search_text": "시원하게 벽돌을 깨자 공으로 벽돌을 부수는 고전게임 만들기 벽돌깨기 게임을 나만의 방식으로 재해석 해봐요."
+  },
+  {
+    "id": "ObjectId(6281f209e98fd30267e442bc)",
+    "title": "마이 스마트 위젯",
+    "category": "living",
+    "difficulty": 3,
+    "url": "https://playentry.org/discovery/6281f209e98fd30267e442bc",
+    "search_text": "마이 스마트 위젯 빠르고 간편한 미니 프로그램 나의 일상을 빠르게 도와줄 위젯을 만들어요."
+  },
+  {
+    "id": "ObjectId(6281fbd274f92303325ae132)",
+    "title": "인생은 아름다워!",
+    "category": "storytelling",
+    "difficulty": 3,
+    "url": "https://playentry.org/discovery/6281fbd274f92303325ae132",
+    "search_text": "인생은 아름다워! 데이터로 그리는 나의 이야기 내 인생의 중요한 사건들을 데이터로 만들고 시각화해요."
+  },
+  {
+    "id": "ObjectId(6282051974f92303325ae134)",
+    "title": "뷰티풀! 플라워 아트",
+    "category": "arts",
+    "difficulty": 3,
+    "url": "https://playentry.org/discovery/6282051974f92303325ae134",
+    "search_text": "뷰티풀! 플라워 아트 꽃을 가득 담은 예술의 세계로 나만의 플라워 아트 작품을 만들어요."
+  },
+  {
+    "id": "ObjectId(62822767dd7f2e048e919d8d)",
+    "title": "환상의 동물 사전",
+    "category": "knowledge",
+    "difficulty": 3,
+    "url": "https://playentry.org/discovery/62822767dd7f2e048e919d8d",
+    "search_text": "환상의 동물 사전 잠들어 있던 비밀의 동물들을 깨워라! 환상의 동물들을 찾아 신기한 사전을 만들어보자."
+  },
+  {
+    "id": "ObjectId(628c4d8fe6694607a92413eb)",
+    "title": "X-E 해리어",
+    "category": "game",
+    "difficulty": 3,
+    "url": "https://playentry.org/discovery/628c4d8fe6694607a92413eb",
+    "search_text": "X-E 해리어 박진감 넘치는 탄막 슈팅게임 나만의 슈팅게임을 만들어요."
+  },
+  {
+    "id": "ObjectId(628c542ae6694607a92413ee)",
+    "title": "푹신푹신 스티커",
+    "category": "living",
+    "difficulty": 3,
+    "url": "https://playentry.org/discovery/628c542ae6694607a92413ee",
+    "search_text": "푹신푹신 스티커 인생 샷에 귀여운 스티커를 더하자! 사진에 스티커를 붙이는 앱을 만들어요."
+  },
+  {
+    "id": "ObjectId(628c5817e6694607a92413f0)",
+    "title": "멀티 엔딩 스토리",
+    "category": "storytelling",
+    "difficulty": 3,
+    "url": "https://playentry.org/discovery/628c5817e6694607a92413f0",
+    "search_text": "멀티 엔딩 스토리 나의 선택으로 바뀌는 주인공의 운명 선택에 따라 내용이 바뀌는 멀티 엔딩 스토리를 만들어요."
+  },
+  {
+    "id": "ObjectId(628c626be6694607a92413f4)",
+    "title": "시는 마음의 파도다",
+    "category": "arts",
+    "difficulty": 3,
+    "url": "https://playentry.org/discovery/628c626be6694607a92413f4",
+    "search_text": "시는 마음의 파도다 글로 그리는 그림, 시 시를 쓰고 아름다운 효과를 추가해요."
+  },
+  {
+    "id": "ObjectId(62a015a5f2cd990f3c956c62)",
+    "title": "지구의 날",
+    "category": "knowledge",
+    "difficulty": 2,
+    "url": "https://playentry.org/discovery/62a015a5f2cd990f3c956c62",
+    "search_text": "지구의 날 아름다운 우리들의 지구를 위해 환경 보호의 중요성을 알리는 작품을 만들어요."
+  }
+]

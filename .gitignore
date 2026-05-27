@@ -1,0 +1,42 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv/
+env/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs / temp
+logs/
+*.log
+
+# 데이터셋은 커밋해야 서비스가 바로 뜸
+# dataset/built/ 는 그대로 포함(임베딩/메타 파일 유지)
+
+# 사용자 데이터 / 개인정보 (샘플만 커밋: users.sample.csv)
+users.csv
+
+# 환경변수
+.env
+
+# 실행 파일 / 바이너리
+*.exe
+
+# 잘못 복사된 중복 폴더
+dataset/dataset/
+
+# 오피스 임시 잠금 파일
+~$*

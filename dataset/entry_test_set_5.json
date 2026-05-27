@@ -1,0 +1,73 @@
+[
+  {
+    "id": "UJE_01",
+    "level": "초급",
+    "category": "반복문/누적",
+    "question": "다음 반복문의 실행결과는?",
+    "options": [
+      "45",
+      "50",
+      "90",
+      "100"
+    ],
+    "answer": 0,
+    "image": "C:/Users/PC/Desktop/chatbot/dataset/entry_test_image/UJE_01.png"
+  },
+  {
+    "id": "SUMIN_05",
+    "level": "초급",
+    "category": "반복문/이벤트",
+    "question": "마우스 포인터에 몇 번 닿아야 '성공 말하기'가 실행되는지 고르시오.",
+    "options": [
+      "0",
+      "21",
+      "10",
+      "5"
+    ],
+    "answer": 1,
+    "image": "C:/Users/PC/Desktop/chatbot/dataset/entry_test_image/SUMIN_05.png"
+  },
+  {
+    "id": "SUMIN_06",
+    "level": "중급",
+    "category": "조건문/비교",
+    "question": "다음 코드에 대한 설명으로 옳지 않은 것을 고르시오.",
+    "options": [
+      "score가 10일 때 yourscore가 9이면 '성공 말하기'가 실행된다",
+      "score가 yourscore보다 작으면 '실패 말하기'가 실행된다",
+      "score와 yourscore가 같으면 '실패 말하기'가 실행된다",
+      "score가 9일 때 yourscore가 9이면 '성공 말하기'가 실행된다"
+    ],
+    "answer": 2,
+    "image": "C:/Users/PC/Desktop/chatbot/dataset/entry_test_image/SUMIN_06.png"
+  },
+  {
+    "id": "SUMIN_15",
+    "level": "고급",
+    "category": "리스트/배열",
+    "question": "과일 리스트에 [사과, 자두, 바나나, 포도, 수박]이 있을 때 다음 블록코드의 실행 결과를 고르시오.",
+    "options": [
+      "바나나, 맛있다, 다음",
+      "맛있다, 맛있다, 바나나, 맛있다, 맛있다",
+      "다음, 다음, 바나나, 다음, 다음",
+      "다음, 다음, 맛있다, 다음, 다음",
+      "다음, 다음, 맛있다, 다음, 다음"
+    ],
+    "answer": 1,
+    "image": "C:/Users/PC/Desktop/chatbot/dataset/entry_test_image/SUMIN_15.png"
+  },
+  {
+    "id": "SUMIN_02",
+    "level": "중급",
+    "category": "조건문/논리",
+    "question": "다음 코드에 대한 설명으로 옳은 것을 고르시오.",
+    "options": [
+      "현재 코드의 결과와 a를 2로 정했을 때의 결과는 같다(이때 b,c는 코드와 같음)",
+      "현재 코드의 결과와 b를 4로 정했을 때의 결과는 다르다(이때 a,c는 코드와 같음)",
+      "조건 불만족 이라고 말한다.",
+      "조건 만족 이라고 말한다."
+    ],
+    "answer": 0,
+    "image": "C:/Users/PC/Desktop/chatbot/dataset/entry_test_image/SUMIN_02.png"
+  }
+]

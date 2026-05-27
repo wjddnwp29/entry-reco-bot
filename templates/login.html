@@ -1,0 +1,71 @@
+<!-- templates/login.html -->
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>로그인 | 엔트리 추천 챗봇</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-slate-50">
+  <!-- 헤더 -->
+  <header class="bg-white border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="/" class="text-lg font-semibold">🎯 엔트리 추천 챗봇</a>
+      <nav class="text-sm">
+        <a href="/signup" class="text-slate-600 hover:text-slate-900">회원가입</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Flash / msg -->
+  <div class="max-w-md mx-auto px-6 mt-6">
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+        {% for cat, m in messages %}
+        <div class="mb-3 px-4 py-3 rounded-xl border
+            {% if cat=='success' %} bg-green-50 border-green-200 text-green-700
+            {% elif cat=='error' %} bg-rose-50 border-rose-200 text-rose-700
+            {% else %} bg-slate-100 border-slate-200 text-slate-700 {% endif %}">
+          {{ m }}
+        </div>
+        {% endfor %}
+      {% endif %}
+    {% endwith %}
+    {% if msg %}
+      <div class="mb-3 px-4 py-3 rounded-xl border bg-rose-50 border-rose-200 text-rose-700">
+        {{ msg }}
+      </div>
+    {% endif %}
+  </div>
+
+  <!-- 로그인 카드 -->
+  <main class="max-w-md mx-auto px-6 py-10">
+    <div class="bg-white border border-slate-200 rounded-2xl p-8 shadow-sm">
+      <h1 class="text-2xl font-bold">🔒 로그인</h1>
+      <p class="text-slate-600 mt-1 mb-6 text-sm">아이디와 비밀번호를 입력해 주세요.</p>
+
+      <form method="post" action="/login" class="space-y-4">
+        <div>
+          <label class="block text-sm mb-1">아이디</label>
+          <input name="id" required autocomplete="username"
+                 class="w-full rounded-xl border-slate-300 focus:border-indigo-500 focus:ring-indigo-500" />
+        </div>
+        <div>
+          <label class="block text-sm mb-1">비밀번호</label>
+          <input name="pw" type="password" required autocomplete="current-password"
+                 class="w-full rounded-xl border-slate-300 focus:border-indigo-500 focus:ring-indigo-500" />
+        </div>
+        <button class="w-full py-3 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white font-semibold">
+          로그인
+        </button>
+      </form>
+
+      <p class="mt-5 text-sm text-slate-600">
+        아직 회원이 아니신가요?
+        <a href="/signup" class="text-indigo-600 font-medium hover:underline">회원가입</a>
+      </p>
+    </div>
+  </main>
+</body>
+</html>

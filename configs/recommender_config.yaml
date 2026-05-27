@@ -1,0 +1,30 @@
+recommender:
+  type: maml_meta
+  debug_compare: true
+
+paths:
+  meta_path: dataset/built/contents_meta.json
+  embedding_path: dataset/built/contents_embeddings.pkl
+  checkpoint_path: models/maml_ranker.pt
+  logs_dir: logs/user_logs
+  meta_tasks_path: dataset/built/meta_tasks.json
+
+encoder:
+  backend: kobert
+  model_name: skt/kobert-base-v1
+  embedding_dim: 768
+  local_files_only: false
+  allow_hash_fallback: true
+
+maml:
+  hidden_dim: 128
+  inner_lr: 0.05
+  outer_lr: 0.001
+  inner_steps: 1
+  support_size: 6
+  query_size: 6
+  tasks_per_batch: 4
+  epochs: 5
+  negative_samples: 3
+  device: cpu
+  adapt_on_inference: true

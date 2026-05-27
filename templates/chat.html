@@ -1,0 +1,175 @@
+<!-- templates/chat.html -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>엔트리 챗봇</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { font-family: 'Segoe UI', sans-serif; background-color: #f3f4f6; padding: 30px; }
+    .chat-container { max-width: 1100px; margin: auto; background: white; padding: 25px; border-radius: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+    .bubble { padding: 12px 16px; border-radius: 18px; margin: 8px 0; max-width: 75%; word-wrap: break-word; }
+    .user { background-color: #d1e7dd; margin-left: auto; }
+    .bot { background-color: #e9ecef; margin-right: auto; }
+    .chat-box { display: flex; flex-direction: column; gap: 6px; min-height: 120px; }
+    .input-row { display: flex; gap: 8px; margin-top: 12px; }
+    .input-row input[type="text"] { flex: 1; padding: 12px; border: 1px solid #ced4da; border-radius: 8px; }
+    .input-row button { padding: 10px 16px; background-color: #0d6efd; color: white; border: none; border-radius: 8px; cursor: pointer; }
+    .input-row button:hover { background-color: #0b5ed7; }
+    .card-container { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 10px; }
+    .card { background-color: #f8f9fa; border: 1px solid #dee2e6; padding: 15px; border-radius: 10px; flex: 1 1 calc(33.33% - 16px); box-sizing: border-box; position: relative; }
+    .card-title { font-weight: bold; color: #495057; margin-bottom: 6px; }
+    .card-desc { font-size: 14px; color: #666; margin-bottom: 6px; }
+    .card-goal { font-size: 13px; color: #888; margin-bottom: 8px; }
+    .badge-selected { position: absolute; top: 10px; right: 10px; background-color: #28a745; color: white; padding: 3px 8px; font-size: 12px; border-radius: 12px; }
+    @media (max-width: 768px) { .card { flex: 1 1 100%; } }
+    /* typing indicator */
+    .typing { width: 56px; height: 28px; background: #e9ecef; border-radius: 14px; display: flex; align-items: center; justify-content: center; gap: 4px; margin: 8px 0; }
+    .typing span { width: 6px; height: 6px; background: #999; border-radius: 50%; animation: blink 1.2s infinite; }
+    .typing span:nth-child(2){ animation-delay: .2s }
+    .typing span:nth-child(3){ animation-delay: .4s }
+    @keyframes blink { 0%, 80%, 100% { opacity: .2 } 40% { opacity: 1 } }
+  </style>
+</head>
+<body>
+  <div class="chat-container">
+    <h2 class="text-xl font-bold">🤖 엔트리 추천 챗봇</h2>
+
+    <!-- 채팅 버블 영역 -->
+    <div id="chat-box" class="chat-box">
+      <div class="bubble bot">만들어 보고 싶은 콘텐츠를 입력해 주세요!</div>
+    </div>
+
+    <!-- 입력 -->
+    <div class="mt-4 flex flex-wrap items-center gap-3 text-sm">
+      <label class="flex items-center gap-2">
+        추천 방식
+        <select id="recommender-type" class="border border-slate-300 rounded-lg px-2 py-1">
+          <option value="similarity" {% if recommender_type == 'similarity' %}selected{% endif %}>similarity</option>
+          <option value="maml_meta" {% if recommender_type == 'maml_meta' %}selected{% endif %}>maml_meta</option>
+        </select>
+      </label>
+      <label class="flex items-center gap-2">
+        <input id="debug-compare" type="checkbox" {% if debug_compare %}checked{% endif %}>
+        비교 모드
+      </label>
+    </div>
+
+    <div class="input-row">
+      <input id="q" type="text" placeholder="예: 점프하는 축구 게임 만들고 싶어요" autocomplete="off">
+      <button id="send">질문하기</button>
+    </div>
+
+    <!-- 추천 섹션 -->
+    <div id="rec-sections" class="mt-6">
+      <h4 class="text-lg font-semibold mt-6">📗 질문 + 난이도(유사도 기반)</h4>
+      <div id="similarity" class="card-container"></div>
+
+      <h4 class="text-lg font-semibold mt-8">🧠 메타러닝(MAML meta-ranker)</h4>
+      <div id="maml" class="card-container"></div>
+    </div>
+  </div>
+
+  <script>
+  const chatBox = document.getElementById('chat-box');
+  const input = document.getElementById('q');
+  const sendBtn = document.getElementById('send');
+  const secSim = document.getElementById('similarity');
+  const secMaml = document.getElementById('maml');
+  const recommenderType = document.getElementById('recommender-type');
+  const debugCompare = document.getElementById('debug-compare');
+  const userLevel = "{{ level|default('Beginner') }}";
+
+  function addBubble(text, who='bot', isTyping=false){
+    const div = document.createElement('div');
+    if(isTyping){
+      div.className = 'typing bubble bot';
+      div.innerHTML = '<span></span><span></span><span></span>';
+    } else {
+      div.className = `bubble ${who}`;
+      div.textContent = text;
+    }
+    chatBox.appendChild(div);
+    chatBox.scrollTop = chatBox.scrollHeight;
+    return div;
+  }
+
+  function cardHTML(item, source){
+    const diff = item.difficulty || '알 수 없음';
+    const desc = item.description || '설명 없음';
+    const goal = item.goal || '없음';
+    const selBadge = item.selected ? '<div class="badge-selected">선택 완료</div>' : '';
+    return `
+      <div class="card">
+        ${selBadge}
+        <div class="card-title">${item.title}</div>
+        <div class="card-desc">${desc}</div>
+        <div class="card-goal">🎯 목표: ${goal}</div>
+        <div>
+          <a href="${item.url||'#'}" target="_blank">🔗 콘텐츠 보러가기</a>
+          <span>(난이도: ${diff})</span>
+        </div>
+        <div class="mt-2 flex gap-2">
+          <button onclick="logAction('select','${item.id}','${source}')">✅ 선택</button>
+          <button onclick="logAction('like','${item.id}','${source}')">👍</button>
+          <button onclick="logAction('dislike','${item.id}','${source}')">👎</button>
+        </div>
+      </div>
+    `;
+  }
+
+  async function logAction(kind, id, source){
+    try{
+      await fetch('/log_action', {
+        method:'POST',
+        headers:{'Content-Type':'application/json'},
+        body: JSON.stringify({ kind, content_id:id, source })
+      });
+    }catch(e){ console.warn(e); }
+  }
+
+  async function ask(){
+    const text = input.value.trim();
+    if(!text) return;
+    // 사용자 버블
+    addBubble(text, 'user');
+    input.value = '';
+
+    // 타이핑 표시
+    const typing = addBubble('', 'bot', true);
+
+    try{
+      const res = await fetch('/chat', {
+        method:'POST',
+        headers:{'Content-Type':'application/json'},
+        body: JSON.stringify({
+          question: text,
+          user_level: userLevel,
+          topk: 6,
+          recommender_type: recommenderType.value,
+          debug_compare: debugCompare.checked
+        })
+      });
+      const data = await res.json();
+
+      // 타이핑 제거 + 봇 버블
+      typing.remove();
+      addBubble('추천 결과를 확인해보세요!', 'bot');
+
+      // 섹션 그리기
+      secSim.innerHTML = (data.similarity||[]).slice(0,6).map(x=>cardHTML(x,'similarity')).join('');
+      secMaml.innerHTML = (data.title||[]).slice(0,6).map(x=>cardHTML(x,'maml')).join('');
+    }catch(e){
+      typing.remove();
+      addBubble('오류가 발생했어요. 잠시 후 다시 시도해 주세요.', 'bot');
+      console.error(e);
+    }
+  }
+
+  sendBtn.addEventListener('click', ask);
+  input.addEventListener('keydown', (e)=>{ if(e.key==='Enter') ask(); });
+
+  </script>
+</body>
+</html>

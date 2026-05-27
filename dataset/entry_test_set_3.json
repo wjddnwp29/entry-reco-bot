@@ -1,0 +1,73 @@
+[
+  {
+    "id": "SUMIN_03",
+    "level": "초급",
+    "category": "반복문",
+    "question": "다음 코드를 실행했을 때 '안녕'을 몇 번 말하는지 고르시오.",
+    "options": [
+      "5",
+      "4",
+      "3",
+      "2"
+    ],
+    "answer": 1,
+    "image": "C:/Users/PC/Desktop/chatbot/dataset/entry_test_image/SUMIN_03.png"
+  },
+  {
+    "id": "UJE_04",
+    "level": "중급",
+    "category": "복합(회전+연산)",
+    "question": "해당 코드를 실행했을 때 엔트리봇은 몇 바퀴 회전하였고 정답은 얼마일까요?",
+    "options": [
+      "4바퀴, 10",
+      "5바퀴, 20",
+      "10바퀴, 10",
+      "10바퀴, 20"
+    ],
+    "answer": 0,
+    "image": "C:/Users/PC/Desktop/chatbot/dataset/entry_test_image/UJE_04.png"
+  },
+  {
+    "id": "UJE_03",
+    "level": "초급",
+    "category": "이동/회전",
+    "question": "해당 코드를 실행했을 때 엔트리봇은 몇 바퀴 회전하였을까요?",
+    "options": [
+      "10바퀴",
+      "5바퀴",
+      "4바퀴",
+      "1바퀴"
+    ],
+    "answer": 0,
+    "image": "C:/Users/PC/Desktop/chatbot/dataset/entry_test_image/UJE_03.png"
+  },
+  {
+    "id": "SUMIN_07",
+    "level": "중급",
+    "category": "반복문/누적",
+    "question": "완료 말하기가 실행되었을 때 더해진 b의 숫자가 아닌 것을 고르시오.",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "answer": 3,
+    "image": "C:/Users/PC/Desktop/chatbot/dataset/entry_test_image/SUMIN_07.png"
+  },
+  {
+    "id": "SUMIN_15",
+    "level": "고급",
+    "category": "리스트/배열",
+    "question": "과일 리스트에 [사과, 자두, 바나나, 포도, 수박]이 있을 때 다음 블록코드의 실행 결과를 고르시오.",
+    "options": [
+      "바나나, 맛있다, 다음",
+      "맛있다, 맛있다, 바나나, 맛있다, 맛있다",
+      "다음, 다음, 바나나, 다음, 다음",
+      "다음, 다음, 맛있다, 다음, 다음",
+      "다음, 다음, 맛있다, 다음, 다음"
+    ],
+    "answer": 1,
+    "image": "C:/Users/PC/Desktop/chatbot/dataset/entry_test_image/SUMIN_15.png"
+  }
+]

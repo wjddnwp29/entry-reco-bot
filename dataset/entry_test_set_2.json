@@ -1,0 +1,73 @@
+[
+  {
+    "id": "SUMIN_15",
+    "level": "고급",
+    "category": "리스트/배열",
+    "question": "과일 리스트에 [사과, 자두, 바나나, 포도, 수박]이 있을 때 다음 블록코드의 실행 결과를 고르시오.",
+    "options": [
+      "바나나, 맛있다, 다음",
+      "맛있다, 맛있다, 바나나, 맛있다, 맛있다",
+      "다음, 다음, 바나나, 다음, 다음",
+      "다음, 다음, 맛있다, 다음, 다음",
+      "다음, 다음, 맛있다, 다음, 다음"
+    ],
+    "answer": 1,
+    "image": "C:/Users/PC/Desktop/chatbot/dataset/entry_test_image/SUMIN_15.png"
+  },
+  {
+    "id": "SUMIN_11",
+    "level": "중급",
+    "category": "반복문/조건",
+    "question": "코드 수행 후 출력된 숫자들의 모음을 고르시오.",
+    "options": [
+      "1, 2, 3, 4, 5",
+      "2, 4",
+      "1, 3, 5",
+      "3, 4"
+    ],
+    "answer": 1,
+    "image": "C:/Users/PC/Desktop/chatbot/dataset/entry_test_image/SUMIN_11.png"
+  },
+  {
+    "id": "UJE_05",
+    "level": "초급",
+    "category": "속성/크기",
+    "question": "해당 코드를 실행했을 때 엔트리봇의 크기는 얼마일까요?",
+    "options": [
+      "40",
+      "100",
+      "10",
+      "0"
+    ],
+    "answer": 0,
+    "image": "C:/Users/PC/Desktop/chatbot/dataset/entry_test_image/UJE_05.png"
+  },
+  {
+    "id": "SUMIN_14",
+    "level": "중급",
+    "category": "반복문/제어",
+    "question": "아래 코드의 실행결과로 가장 적절한 것을 고르시오.",
+    "options": [
+      "움직이지 않는다",
+      "이동 방향으로 50만큼 움직이고 멈춘다",
+      "이동 방향으로 5만큼 움직이고 멈춘다",
+      "이동 방향으로 계속 움직인다"
+    ],
+    "answer": 1,
+    "image": "C:/Users/PC/Desktop/chatbot/dataset/entry_test_image/SUMIN_14.png"
+  },
+  {
+    "id": "SUMIN_09",
+    "level": "초급",
+    "category": "입출력/연산",
+    "question": "입력된 숫자와 결과가 옳게 연결된 것을 고르시오.",
+    "options": [
+      "대답: 2 → 결과: 2",
+      "대답: 3 → 결과: 9",
+      "대답: 4 → 결과: 6",
+      "대답: 5 → 결과: 10"
+    ],
+    "answer": 1,
+    "image": "C:/Users/PC/Desktop/chatbot/dataset/entry_test_image/SUMIN_09.png"
+  }
+]
